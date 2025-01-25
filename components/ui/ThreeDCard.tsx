@@ -5,7 +5,6 @@ import React from "react";
 import { CardBody, CardContainer, CardItem } from "./CardContainer";
 import Link from "next/link";
 import { FaGithub, FaLocationArrow } from "react-icons/fa6";
-import bg from "@/public/bg.png";
 
 type CardProps = {
   title : string;
@@ -45,8 +44,8 @@ export function ThreeDCard({title, img, des, gitLink, liveLink} : CardProps) {
           <CardItem
             translateZ={20}
             as={Link}
-            href={liveLink || "#"}
-            target="__blank"
+            // href={liveLink || "#"}
+            // target="__blank"
             className="px-4 py-2 flex items-center gap-1 opacity-70 hover:opacity-100 rounded-xl text-xs font-normal dark:text-white"
           >
             Live {<FaLocationArrow />}
@@ -54,7 +53,7 @@ export function ThreeDCard({title, img, des, gitLink, liveLink} : CardProps) {
           <CardItem
             translateZ={20}
             as={Link}
-            href={gitLink || "#"}
+            // href={gitLink || "#"}
             className="px-4 py-2 rounded-xl opacity-70 hover:opacity-100 flex items-center gap-2 bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
           >
             {<FaGithub />} Github

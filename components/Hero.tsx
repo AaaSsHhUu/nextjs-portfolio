@@ -27,7 +27,7 @@ const Hero = () => {
                             className='text-center text-[40px] md:text-4xl lg:text-5xl' 
                         />
 
-                        <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl'>Hi, I'm Ashu, a Next.js Developer based in India.</p>
+                        <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-xl'>Hi, I&apos;m Ashu, a Next.js Developer based in India.</p>
 
                         <a href="#about"><MagicButton title='Show My Work' icon={<FaLocationArrow />} position='right' /></a>
                     </div>
